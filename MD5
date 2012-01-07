@@ -1,0 +1,11 @@
+96d297b7def96d5dd4c5642b78af6d59 *DESCRIPTION
+8b54e5a89fbda3af5e077053d40bec76 *NAMESPACE
+65b800a9084793f2fcbd4d75bbc87dcc *R/Anscombe.test.R
+dd4a4442babf9274fa07f2b33624a296 *R/FT.test.R
+601d2b9e831b73d1d2de9599f29f5036 *R/SNPass.test.R
+52c76db3602d8c3382877d54ce41c6e4 *R/arcsine.test.R
+b82b3aae774e5788204a252c5b64d377 *man/Anscombe.test.Rd
+cbb9fa16ba559fc7299c00a2e793ded1 *man/FT.test.Rd
+860188d8e06f8c78b9644765b0d04f1c *man/SNPass.test.Rd
+2559db1f6f1dc59c9be6af3831e705bf *man/arcsine.test.Rd
+0295cb00bc6a7c2b693eeb678f1b3d84 *man/iGasso-package.Rd
