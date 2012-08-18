@@ -6,12 +6,13 @@
 }
 \usage{SNPass.test(geno, pheno)}
 \arguments{
-  \item{geno}{ an \code{n x 1} vector of SNP genotypes on study subjects. Scoring of the genotypes aa, aA, and AA does not matter as long as the the score for the heterogeneous genotype is between the two homogeneous genotype scores.}
-  \item{pheno}{an \code{n x p} matrix of phenotype values. \code{p} could be 1. Phenotype can be dichotomous, continuous, or a mix of both types. }
+  \item{geno}{ a length \code{n} vector of SNP genotypes on study subjects. Scoring of the genotypes aa, aA, and AA does not matter as long as the the score for the heterogeneous genotype is between the two homogeneous genotype scores.}
+  \item{pheno}{an \code{nxp} matrix of phenotype values. \code{p} could be 1. Phenotype can be dichotomous, continuous, or a mix of both types. }
 }
 
 \details{
-%% to be added
+%% 
+The name of this function may change in the future. 
 }
 
 \value{
@@ -24,16 +25,16 @@ A list with class "\code{htest}" containing the following components:
 
 
 \references{
-Wang, K. (2012) An application of the proportional odds model to genetic association studies. Submitted.
+Wang, K. (2012) Genetic association analysis with multiple phenotypes possibly of different types. Submitted.
 }
 
 \author{
 Kai Wang \code{<kai-wang@uiowa.edu>}
 }
 
-\note{
+%\note{
 %To be added
-}
+%}
 
 \examples{
 pheno = c(1,1,1,1,1,0,0,0,0,0)
