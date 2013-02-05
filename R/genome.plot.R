@@ -24,7 +24,7 @@ genome.plot = function(mydata, style=1, type="h", sig.line=c(4, -4), sig.color=c
     	xyplot(y ~ pos|t.chr, data=mydata, xlab = "Chromosome", type=type, ..., 
                layout=c(n.chr,1), strip=FALSE,
                scales=list(x=list(relation="free", tck=c(0,0),
-                           at=as.vector((maxs-mins)/2, mode="list"), 
+                           at=as.vector((maxs+mins)/2, mode="list"), 
                            labels=as.vector(chr.name, mode="list"))), 
                par.settings = list(layout.widths=list(panel=maxs-mins), axis.line=list(lwd=0.1)), 
                abline=list(h=sig.line, col=sig.color))

@@ -13,7 +13,7 @@ Statistical Tests and utilities for Genetic Association
 Package: \tab iGasso\cr
 Type: \tab Package\cr
 Version: \tab 1.1\cr
-Date: \tab 2012-08-18\cr
+Date: \tab 2013-02-05\cr
 License: \tab GPL (>=2)\cr
 LazyLoad: \tab yes\cr
 }
