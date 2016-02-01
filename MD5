@@ -1,7 +1,8 @@
-8a897730886ee1213ce789c8c72d3e68 *DESCRIPTION
-dbd9fa0f16a804f765f2ffc985c63c32 *NAMESPACE
+c5386e5f6116ab347e0da65666e58985 *DESCRIPTION
+b2c9a344c9d948be2e135c5568edd21a *NAMESPACE
 cb97caf18702195879335946e68a05c2 *R/LMM.test.R
 1f4ed9746e134efd397675d5df909512 *R/MFree.test.R
+619e7df1bb45c45cdcd24cbe290bdbb3 *R/SKATplus.R
 601d2b9e831b73d1d2de9599f29f5036 *R/SNPass.test.R
 f7201ae8b59a3efde198fa116baa01e1 *R/VSTF.test.R
 00d70c017df196776452ee63886446ee *R/genome.plot.R
@@ -10,10 +11,11 @@ f7201ae8b59a3efde198fa116baa01e1 *R/VSTF.test.R
 2eb00429c0b11531cd0bd025dde0be26 *R/null.par.R
 377a8d8fbeba941025d22525e839c80a *man/LMM.test.Rd
 2df64656dc8f1d89c6706cb44a50a636 *man/MFree.test.Rd
+350e12c0fee04eeaacb81d60adc5b510 *man/SKATplus.Rd
 2e5210d7e21314756a13346bc381d184 *man/SNPass.test.Rd
 dfab3460318f1232295cef8114a4555f *man/VSTF.test.Rd
 6b008cc04429e4db37c74d94f82813ae *man/genome.plot.Rd
-6bb616ee14a96816e72213f67e62daea *man/iGasso-package.Rd
+cdd4b9e4d5dd6e64d70b9cbc26f29d7c *man/iGasso-package.Rd
 58a3c3becbc40d2a74aa40b30cc82145 *man/kinf.BN.Rd
 e3a31a7e6ceb7c989a3a593fa6b81f5e *man/mlmp.test.Rd
 0491358288ac02edda6a57fd075ca8aa *man/null.par.Rd

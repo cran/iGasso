@@ -17,7 +17,6 @@ Date: \tab 2014-06-11\cr
 License: \tab GPL (>=2)\cr
 LazyLoad: \tab yes\cr
 }
-Functions for various tests have .test as their extension name. 
 }
 \author{
 Kai Wang \code{<kai-wang@uiowa.edu>}

@@ -1,2 +1,4 @@
 exportPattern("^[[:alpha:]]+")
 import(CompQuadForm, lattice)
+importFrom("stats", "anova", "binomial", "fitted.values", "glm", "lm",
+              "na.omit", "optimize", "pchisq", "residuals", "var")
