@@ -32,7 +32,7 @@ A list with class "\code{test}" containing the following components:
 \item{data.name}{a character string giving the name of the data.}
 }
 \references{
-Wang K. (2012) Statistical tests of genetic association for case-control study designs. \emph{Biostatistics}. Accepted. PMID: 22389176
+Wang K. (2012) Statistical tests of genetic association for case-control study designs. \emph{Biostatistics}. 13(4):724-33. PMID: 22389176
 }
 \author{
 Kai Wang \code{<kai-wang@uiowa.edu>}

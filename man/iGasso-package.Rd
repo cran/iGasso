@@ -12,8 +12,8 @@ Statistical Tests and utilities for Genetic Association
 \tabular{ll}{
 Package: \tab iGasso\cr
 Type: \tab Package\cr
-Version: \tab 1.2\cr
-Date: \tab 2014-06-11\cr
+Version: \tab 1.4\cr
+Date: \tab 2016-06-3\cr
 License: \tab GPL (>=2)\cr
 LazyLoad: \tab yes\cr
 }
@@ -33,8 +33,6 @@ Wang, K. (2012) An application of the proportional odds model to genetic associa
 Wang K. (2012) Statistical tests of genetic association for case-control study designs. \emph{Biostatistics}. Accepted. PMID: 22389176
 
 Wang, K., Fingert, J. (2012) Statistical tests for detecting rare variants using variance-stabilizing transformations. \emph{Annals of Human Genetics}. Accepted. 
-
-Wang K. (2012) A valid and powerful mixed model method for genome-wide association studies. Submitted.
 
 Zar, J. H. (1999) \emph{Biostatistical Analysis, 4th ed.}, New Jersey:Prentice-Hall, Inc.
 }
@@ -61,7 +59,4 @@ MFree.test(G)
 G = matrix(sample(c(0,1,2), 200, replace=TRUE), ncol=10)
 y = rnorm(10)
 X = matrix(rnorm(10), ncol=1)
-BN = kinf.BN(G, whole=TRUE)
-tmp = null.par(BN, y, X)
-LMM.test(G[2,], tmp$y1, BN, tmp$Sigma0.1)
 }

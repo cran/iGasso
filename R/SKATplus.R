@@ -18,7 +18,11 @@ SKATplus = function(y, G, X=NULL, out_type="D", tau=NULL, permutation=FALSE, B=1
     }
     stat = sum(crossprod(G, res.y)^2)
 
-    if (is.null(tau)) selected = (res.y <= 0) else selected = (rank(res.y) <= tau*n)
+    if (is.null(tau)) {
+    	    selected = (res.y <= 0) 
+    	    tau = mean(selected)
+    	    }
+    	else selected = (rank(res.y) <= tau*n)
     G0 = G[selected,]  
     n0 = sum(selected)
     if (permutation){
@@ -42,9 +46,10 @@ SKATplus = function(y, G, X=NULL, out_type="D", tau=NULL, permutation=FALSE, B=1
         pvalue = davies(stat, lambda=pca0$values*(n-k)/(n0-k))$Qq
     }
 
-    PAR = c(n, k-1)
-    names(PAR) = c("# subjects", "# SNPs")
+    PAR = c(ncol(G), n, round(tau*100,0))
+    names(PAR) = c("#SNPs", "#subjects", "% used for the null")
+    names(stat) = "SKAT"
     structure(list(statistic = stat, p.value = pvalue, parameter = PAR, 
-        method = "SKAT+ gene- or pathway-based test of association", data.name = DNAME), 
+        method = "SKAT+: gene- or pathway-based test of association based on a proper null", data.name = DNAME), 
         class = "htest")
 }
