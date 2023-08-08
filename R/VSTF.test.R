@@ -1,3 +1,37 @@
+#'   Association Tests for Rare Variants Based on Variance-Stabilizing Transformation
+#' 
+#'   \code{VSTF.test} performs tests on association between a rare variant and case-control status using a variance-stabilizing transformation.
+#'
+#' %% ~~ If necessary, more details than the description above ~~ 
+#'    Each test is named after the author(s) of the corresponding publication.
+#' 
+#' @param G a \code{2x2} matrix. The first row is for cases and the second one for controls. In each row, the first element is the number of non-carriers and the second one is the number of carriers with at least 1 copy of the variant. 
+#' @param method a character string indicating which transformation to use. One of \code{"Anscombe"} (default), \code{"arcsine"}, \code{"Freeman-Tukey"}, and \code{"Chanter"}.
+#' @return A list with class "\code{test}" containing the following components:
+#' * statistic the value of the test statistic.
+#' * p.value the p-value for the test computed from a chi-square distribution with 1 df.
+#' * method a character string indicting the test performed.
+#' * data.name a character string giving the name of the data.
+#' @author Kai Wang \code{<kai-wang@@uiowa.edu>}
+#' @references 
+#' Anscombe, F. J. (1948) The transformation of Poisson, binomial and negative-binomial data. \emph{Biometrika} \bold{35(3/4)}, 246--254.
+#'
+#' Chanter, D. O. (1975). Modifications of the angular transformation. \emph{Journal of the Royal Statistical Society. Series B (Applied Statistics)} \bold{24(3)}, 354--359.
+#' 
+#' Freeman, M. F., Tukey, J. W. (1950) Transformations related to the angular and the square root. \emph{The Annals of Mathematical Statistics} \bold{21(4)}, 607--611.
+#' 
+#' Wang, K., Fingert, J. (2012) Statistical tests for detecting rare variants using variance-stabilizing transformations. \emph{Annals of Human Genetics}. 76(5):402-409.
+#' 
+#' Zar, J.H. (1999) \emph{Biostatistical Analysis, 4th ed.}, New Jersey:Prentice-Hall, Inc.
+#' @examples
+#' ## Example 1 of Li et al. (2010)
+#' G = rbind(c(14, 999), c(3, 1081))
+#' VSTF.test(G)
+#' VSTF.test(G, method = "arcsine")
+#' VSTF.test(G, method = "Freeman-Tukey")
+#'
+#' @export 
+
 VSTF.test <-
 function(G, method="Anscombe")
 {

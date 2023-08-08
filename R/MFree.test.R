@@ -1,3 +1,28 @@
+#' Model-free Association Tests
+#' 
+#' \code{MFree.test} performs tests on association between an SNP and case-control status. It tests whether the frequencies of an allele are the same between cases and controls. It does not require specification of an inheritance model. 
+#'
+#' %% ~~ If necessary, more details than the description above ~~ 
+#'    Each test is named after the author(s) of the corresponding publication.
+#' 
+#' @param G a \code{2x3} two-dimensional contingency table in matrix form. The first row is for cases and the second one for controls. In each row, the entries are the number of subjects carrying 0, 1, and 2 copies of the reference allele, respective. 
+#' @param method a character string indicating the test statistic to use. One of \code{"score"} (default), \code{"Wald"}, and \code{"LRT"}. 
+#' @return   A list with class "\code{test}" containing the following components:
+#' * statistic the value of the test statistic.
+#' * p.value the p-value for the test computed from a chi-square distribution with 1 df.
+#' * method a character string indicting the test performed.
+#' * data.name a character string giving the name of the data.
+#' @author Kai Wang \code{<kai-wang@@uiowa.edu>}
+#' @references 
+#' Wang K. (2012) Statistical tests of genetic association for case-control study designs. \emph{Biostatistics}. 13(4):724-33. PMID: 22389176
+#' @examples
+#' G = rbind(c(161, 474, 489), c(231, 444, 380))
+#' MFree.test(G)
+#' MFree.test(G, method = "Wald")
+#' MFree.test(G, method = "LRT")
+#'
+#' @export 
+
 MFree.test <-
 function(G, method="score")
 {

@@ -1,3 +1,41 @@
+#'   A Gene- or Pathway-Based Test of Association
+#'   
+#'   \code{SKATlus} provides enhanced power over SKAT by properly estimating the null distribution of SKAT.
+#'
+#' %% ~~ If necessary, more details than the description above ~~ 
+#'    This version uses only subjects with lower phenotypic values for estimating the null distribution. That is, the "controls" are those of lower phenotypic values. When "controls" are of higher phenotypic values, change the sign of the phenotypic values in order to use this function.
+#' 
+#' @param y a vector of phenotype on \eqn{n} subjects.
+#' @param G an \eqn{n \times m} matrix of SNP genotypes of \eqn{n} study subjects at \eqn{m} loci.
+#' @param X a matrix of covariates. It has \eqn{n} rows.
+#' @param out_type an indicator of the outcome type. \code{"C"} for the continuous outcome and \code{"D"} for the dichotomous outcome.
+#' @param tau proportion of selected subjects used for SKATplus.
+#' @param permutation an indicator. Use permutation for p-value or not.
+#' @param B the number of permutations if \code{permutation=TRUE}
+#' 
+#' @return   A list with class "\code{htest}" containing the following components:
+#' * statistic the value of the test statistic, which is the same as SKAT statistic.
+#' * parameter sample size and the number of SNPs
+#' * p.value the p-value for SKATplus computed using Davies' method.
+#' * method a character string indicting the test performed.
+#' * data.name a character string giving the name of the data.
+#' @author Kai Wang \code{<kai-wang@@uiowa.edu>}
+#' @references 
+#'     Wang, K. (2016) Boosting the power of the sequence kernel association test (SKAT) almost surely by properly estimating its null distribution. \emph{A J Hum Genet}. 99 (1), 104-114.
+#'
+#' @examples
+#'     n=1000
+#'     y = c(rep(1, n/2), rep(0, n/2))
+#'     maf = seq(0.05, 0.5, 0.05)
+#'     g = NULL
+#'     for (j in 1:10){
+#'        geno.freq = c(maf[j]^2, 2*maf[j]*(1-maf[j]), (1-maf[j])^2)
+#'        g = cbind(g, sample(c(0,1,2), n, replace=TRUE, prob=geno.freq))
+#'        }
+#'        SKATplus(y, g, X=NULL, out_type="D", tau=NULL, permutation=FALSE, B=1000)
+#'
+#' @export 
+
 SKATplus = function(y, G, X=NULL, out_type="D", tau=NULL, permutation=FALSE, B=1000){
 	DNAME = paste(deparse(substitute(G)), "and", deparse(substitute(y)), "and", deparse(substitute(X)))
     n = length(y)
