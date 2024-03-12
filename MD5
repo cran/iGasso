@@ -1,7 +1,8 @@
-2ded1411573c799904ac54d18a80fca1 *DESCRIPTION
-3006f53d960731edfcc4b1ee13e385ea *NAMESPACE
+2701378b8e70394de8d62e9287bd4da9 *DESCRIPTION
+0e01dd77c638070dd71d43bc58a6da9a *NAMESPACE
 0386a7b913034c3efa414f1f76fde28a *R/KAT.coin.R
 a8bea199dd3464440a3843a4fd349682 *R/MFree.test.R
+7597e5e57f259bf42358df9a8a78e4d4 *R/MR_het_test.R
 e6c2f8a136df5c468444600436083272 *R/SKATplus.R
 95588f56653ac3adfc8c6bf338d34941 *R/SMR_interval.R
 fa3a6d87f24d3e647ae4dd2f0cf6d60f *R/VSTF.test.R
@@ -11,10 +12,11 @@ cfe0469a6dc17ff415aed45a42d5915e *R/h2_snp.R
 ff05aa904cc065dacc6f844b4d484a16 *R/tarq.R
 ad4101f30803af00dd7afef6d0dee08c *man/KAT.coin.Rd
 4fb73e81052273b64a181aaf7d90e8ba *man/MFree.test.Rd
+198c49fe2e7161f7374eb6f3368fdfff *man/MR_het_test.Rd
 f36d88bd62f2caaeb40ec6d3f18c1cbe *man/SKATplus.Rd
 6c9ce4d92126c81c34a2f586e64bc3b6 *man/SMR_interval.Rd
 22e749dbf74185436c78b8ba43246d51 *man/VSTF.test.Rd
 4d323bd2e66659fd4964506d3ec2d769 *man/genome.plot.Rd
 230c5c29f5b249b31717c23556804863 *man/h2_snp.Rd
-92cf077b32e778055ff58cd960bbc038 *man/iGasso-package.Rd
+c350100b02f50b79c023f4ca4c702b9d *man/iGasso-package.Rd
 c9735756198e803c0a8f2abd9d96d20d *man/tarq.Rd

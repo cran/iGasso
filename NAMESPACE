@@ -2,6 +2,7 @@
 
 export(KAT.coin)
 export(MFree.test)
+export(MR_het_test)
 export(SKATplus)
 export(SMR_interval)
 export(VSTF.test)
